@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../imagenes/playa.jpg);
+  background-size: cover;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 22%;
+  width: 22%;
+}
+.menu #navbar ul li {
+  position: relative;
+  float: left;
+}
+.menu #navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #fffdfc;
+  display: block;
+  font-weight: 600;
+}
+.menu #navbar ul li a:hover {
+  color: aqua;
+}
+.menu-icono {
+  width: 25px;
+}
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+.Hotel_Header_Container {
+  text-align: center;
+}
+.Hotel_Header_Container h1 {
+  font-size: 50px;
+  line-height: 80px;
+  color: aliceblue;
+  margin-bottom: 35px;
+  margin-top: 6%;
+}
+.Hotel_Header_Container p {
+  font-size: 25px;
+  color: #fffdfc;
+  padding: 0 250px;
+}
+.hoteles_content {
+  margin: 3%;
+}
+.hoteles_content_section_variable {
+  border: 1px solid #ffffff;
+  display: flex;
+}
+.hoteles_content_section_variable:hover {
+  border: 1px solid #007bff;
+}
+.hoteles_content_img {
+  height: 150px;
+  width: 150px;
+}
+.Hotel_Content_ubicacion {
+  margin-bottom: 20px;
+}
+.hoteles_content_div_descripcion {
+  padding-left: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.hoteles_content_h4 {
+  margin-top: 10%;
+}
+.hoteles_div_puntacion {
+  margin-left: 79%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #003b95;
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+}
+.hoteles_content_div_puntuacion {
+  display: inline;
+  justify-items: end;
+  align-items: center;
+}
+.hoteles_conten_precio {
+  margin-top: 10%;
+  font-size: 20px;
+  min-width: 125px;
+  font-weight: bold;
+}
+.hoteles_Bogota {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Crea dos columnas de igual ancho */
+  grid-gap: 20px; /* Espacio entre las columnas y las filas */
+}
+
+#content {
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+#Hotel_Contenido_body {
+  display: flex;
+}
+#sidebar {
+  order: -1;
+  max-width: 20%;
+}
+
+#Hotel_section_content {
+  display: grid;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#Hotel_form_Ciudad {
+  display: flex;
+  align-items: center;
+}
+#Hotel_input_date {
+  margin-left: 2%;
+}
+#Hotel_button_Ciudad {
+  margin-left: 2%;
+}
+#sidebar h2 {
+  color: #0056b3;
+}
+#hoteles_div_mapa {
+  display: grid;
+  justify-content: center;
+}
+#hotel_tabla_recomendados td,
+#hotel_tabla_recomendados th {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+#hotel_tabla_recomendados {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#hotel_tabla_recomendados th,
+#hotel_tabla_recomendados td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+
+#hotel_tabla_recomendados th {
+  background-color: #000;
+  color: #fff;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+}
+section {
+  padding: 20px;
+  border: 1px solid #007bff;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+label {
+  font-size: 17px;
+  margin-right: 10px;
+}
+
+select {
+  font-family: "Poppins", sans-serif;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

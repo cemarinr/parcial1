@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoteles</title>
+    <link rel="stylesheet" href="hoteles.css" />
+    <link rel="icon" type="image/x-icon" href="../imagenes/icon.ico" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="menu container">
+        <a href="../index.html">
+          <img class="logo" src="../imagenes/LOGO EDITADO BLANCO.png" />
+        </a>
+        <nav id="navbar">
+          <ul>
+            <li><a href="../index.html"> Inicio</a></li>
+            <!--link para acceder a la pagina de Damian  -->
+            <li><a href="#"> Paquetes</a></li>
+            <!--link para acceder a la pagina de carlos  -->
+            <li><a href="#"> Hoteles</a></li>
+            <!--link para acceder a la pagina de edison -->
+            <li><a href="#"> Contacto</a></li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=D7GX8oBZ3BM"
+                >Lugares Sugeridos</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="Hotel_Header_Container">
+        <h1>Encuentra y Reserva tu Estancia Ideal <br />¡Hoy Mismo!</h1>
+        <p>
+          Explora nuestra variedad de hoteles y encuentra tu lugar ideal. Usa
+          nuestros filtros por destino, precio y comodidades para hallar lo que
+          necesitas. ¡Comienza tu aventura ahora para una experiencia memorable!
+        </p>
+      </div>
+    </header>
+    <div id="Hotel_Contenido_body">
+      <div id="content">
+        <section id="Hotel_section_content">
+          <form id="Hotel_form_Ciudad">
+            <label for="hoteles_opciones_ciudad"
+              >Selecciona la ciudad y día de reservación</label
+            >
+            <select id="hoteles_opciones_ciudad">
+              <option value="Seleccionar">Seleccionar</option>
+              <option value="bogota">Bogotá</option>
+              <option value="medellin">Medellín</option>
+              <option value="cali">Cali</option>
+              <option value="cartagena">Cartagena</option>
+              <option value="barranquilla">Barranquilla</option>
+            </select>
+            <input type="date" id="Hotel_input_date" />
+            <button type="submit" id="Hotel_button_Ciudad">Seleccionar</button>
+          </form>
+        </section>
+        <div class="hoteles_content">
+          <div id="hoteles_div_mapa"></div>
+          <div class="hoteles_Bogota">
+            <section class="hoteles_content_section_variable">
+              <img
+                class="hoteles_content_img"
+                src="../imagenes/Hotel_Hernandez_GTC.png"
+              />
+              <div class="hoteles_content_div_descripcion">
+                <div>
+                  <h3 class="hoteles_content_h3">Hotel Hernandez GTC</h3>
+                  <h4 class="hoteles_content_h4">Bogotá D.C.</h4>
+                </div>
+                <div class="hoteles_content_div_puntuacion">
+                  <div class="hoteles_div_puntacion">8.1</div>
+                  <div class="hoteles_conten_precio">COP 332.100</div>
+                </div>
+              </div>
+            </section>
+            <section class="hoteles_content_section_variable">
+              <img
+                class="hoteles_content_img"
+                src="../imagenes/Hotel_Hernandez_GTC.png"
+              />
+              <div class="hoteles_content_div_descripcion">
+                <div>
+                  <h3 class="hoteles_content_h3">Hotel Hernandez GTC</h3>
+                  <h4 class="hoteles_content_h4">Bogotá D.C.</h4>
+                </div>
+                <div class="hoteles_content_div_puntuacion">
+                  <div class="hoteles_div_puntacion">8.1</div>
+                  <div class="hoteles_conten_precio">COP 332.100</div>
+                </div>
+              </div>
+            </section>
+            <section class="hoteles_content_section_variable">
+              <img
+                class="hoteles_content_img"
+                src="../imagenes/Hotel_Hernandez_GTC.png"
+              />
+              <div class="hoteles_content_div_descripcion">
+                <div>
+                  <h3 class="hoteles_content_h3">Hotel Hernandez GTC</h3>
+                  <h4 class="hoteles_content_h4">Bogotá D.C.</h4>
+                </div>
+                <div class="hoteles_content_div_puntuacion">
+                  <div class="hoteles_div_puntacion">8.1</div>
+                  <div class="hoteles_conten_precio">COP 332.100</div>
+                </div>
+              </div>
+            </section>
+            <section class="hoteles_content_section_variable">
+              <img
+                class="hoteles_content_img"
+                src="../imagenes/Hotel_Hernandez_GTC.png"
+              />
+              <div class="hoteles_content_div_descripcion">
+                <div>
+                  <h3 class="hoteles_content_h3">Hotel Hernandez GTC</h3>
+                  <h4 class="hoteles_content_h4">Bogotá D.C.</h4>
+                </div>
+                <div class="hoteles_content_div_puntuacion">
+                  <div class="hoteles_div_puntacion">8.1</div>
+                  <div class="hoteles_conten_precio">COP 332.100</div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div id="hotel_div_recomendados"></div>
+        </div>
+      </div>
+      <div id="sidebar">
+        <section>
+          <li>
+            <label for="checkbox-recomendados"
+              >Mostrar hoteles recomendados</label
+            >
+            <input type="checkbox" id="checkbox-recomendados" />
+          </li>
+        </section>
+        <section>
+          <h2>Filtros</h2>
+          <ul>
+            <li>
+              <h3>Número de Estrellas</h3>
+              <input
+                type="number"
+                id="Hotel_input_NumEstrellas"
+                min="1"
+                max="5"
+              />
+            </li>
+            <li>
+              <h3>Precio</h3>
+              <input type="checkbox" id="filtro-bajo" value="bajo" />
+              <label for="filtro-bajo">Bajo</label>
+              <input type="checkbox" id="filtro-medio" value="medio" />
+              <label for="filtro-medio">Medio</label>
+              <input type="checkbox" id="filtro-alto" value="alto" />
+              <label for="filtro-alto">Alto</label>
+            </li>
+            <li>
+              <h3>Comodidades</h3>
+              <input type="checkbox" id="wifi" value="wifi" />
+              <label for="wifi">Wifi</label>
+              <input type="checkbox" id="piscina" value="piscina" />
+              <label for="piscina">Piscina</label>
+              <input type="checkbox" id="spa" value="spa" />
+              <label for="spa">Spa</label>
+            </li>
+            <button>filtrar</button>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 FLYING HIGH</p>
+    </footer>
+    <script src="hoteles.js"></script>
+  </body>
+</html>
