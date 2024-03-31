@@ -182,6 +182,17 @@ body {
   background-color: #000;
   color: #fff;
 }
+footer {
+  background-image: linear-gradient(
+      rgba(32, 30, 30, 0.7),
+      rgba(58, 50, 50, 0.7)
+    ),
+    url(../imagenes/playa.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 
 input {
   font-family: "Poppins", sans-serif;
